@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhaveydeep Sethi — Data Analyst Portfolio</title>
+
+  <!-- External stylesheet (site-wide) -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Fonts: display serif + body sans + mono for data labels -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Internal CSS: page-specific override, only used on the home page -->
+  <style>
+    /* This page's badge text is slightly wider-tracked than the default,
+       just for the home hero */
+    .hero-badge {
+      letter-spacing: 0.12em;
+    }
+  </style>
+</head>
+
+<body>
+
+    <script>
+    //Applying the dark theme before the page loads 
+    var savedTheme = localStorage.getItem("theme"); //creating new variable that holds either dark or light
+      if (savedTheme === "dark"){
+        document.body.setAttribute("data-theme", "dark"); //adding custom attribute to body
+      }
+  </script>
+
+  <!-- ================= NAVIGATION ================= -->
+  <div id="header-placeholder"></div>
+
+  <!-- ================= HERO ================= -->
+  <section class="projects">
+    <div class="projects-copy">
+        <h1 class="projects-heading">
+            About Me
+        </h1>
+        <p class="projects-bio">
+            3rd year ITEC student @ YorkU
+        </p>
+    </div>  
+  </section>
+
+  <!-- ================= HERO ================= -->
+   <section class="about-section">
+    <div class="about-photo">
+        <img src="images/IMG_4230.jpeg"
+        alt="photo of Bhavey"/>
+    </div>
+
+    <div class="about-info">
+        <h2 class="about-heading">Hey, I'm Bhavey</h2>
+        <p class="about-desc">I'm a third-year CS student at York University. 
+            With a Growing interest in data analytics, web development and user experience 
+            design
+            </p>
+        <p class="about-desc">I enjoy solving problems by combining tech, creativity and analytical thinking.
+            Whether I'm building responsive websitesm analyzing datasets or designing user-friendly interfaces,
+            I like creating solutions that are both functional and easy to use
+        </p>    
+        <p class="about-desc">When I'm not coding I enjoy football, watch too much
+             YouTube, and working on personal projects. I'm actively looking for 
+             a summer 2027 internship.</p>   
+        <ul class="about-links">
+            <li><strong>Location</strong><span>Toronto, ON</span></li>
+            <li><strong>Degree</strong><span>B.A. (Hons.) Information Technology</span></li>
+            <li><strong>Graduation</strong><span>2027</span></li>
+            <li><strong>Email</strong><span>bhaveydeep@gmail.com</span></li>
+            <li><strong>Status</strong><span>Open to Summer 2027 Internships</span></li>
+        </ul>
+
+        </div>
+
+        <button class="about-btn">Get in touch</button>
+    </div>
+   </section>
+
+   <section class="skills">
+        <div class="skills-heading">
+        <h2 class="skills-title">Skills & Tools</h2>
+        <p class="skills-desc">What I've been learning and building with </p>
+        </div>
+        
+        <div class="skills-tags">
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">SQL</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">JAVA</span>
+        </div>
+    
+   </section>
+
+   <section class="education">
+    
+    <div class="education-info">
+        <h2 class="education-heading">Education</h2>
+        <p class="education-para">My academic background</p>
+
+    </div>
+    <div class="education-panel">
+        <div class="uni-section">
+            <h2 class="uni-head">Information Technology</h2>
+            <p class="uni-desc">York University, Toronto</p>
+            <p class="uni-para">Relevant modules: Data Structures, Web Development, SQL & Databases, Applied Artificial Intelligence</p>
+            <span class="entry-date">2025-2027</span>
+        </div>
+        <div class="school-section">
+            <h2 class="uni-head">Computer Sciences</h2>
+            <p class="uni-desc">University Of Fraser Valley</p>
+            <p class="uni-para">Relevant modules: Intro to Buissness, STAT (CSE 134B), Programming Languages (JAVA, Python, JS) </p>
+            <span class="entry-date">Graduated 2023</span>
+        </div>
+        
+    </div>
+
+   </section>
+
+
+      <!-- ================= Footer ================= -->
+  <div id="footer-placeholder"></div>
+  <script src="js/theme.js"></script>
+  <script src="js/components.js"></script>
+
+</body>
+</html>

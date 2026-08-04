@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhaveydeep Sethi — Data Analyst Portfolio</title>
+
+  <!-- External stylesheet (site-wide) -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Fonts: display serif + body sans + mono for data labels -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Internal CSS: page-specific override, only used on the home page -->
+  <style>
+    /* This page's badge text is slightly wider-tracked than the default,
+       just for the home hero — an example of an internal, page-level style. */
+    .hero-badge {
+      letter-spacing: 0.12em;
+    }
+  </style>
+</head>
+
+<body>
+
+    <script>
+    //Applying the dark theme before the page loads 
+    var savedTheme = localStorage.getItem("theme"); //creating new variable that holds either dark or light
+      if (savedTheme === "dark"){
+        document.body.setAttribute("data-theme", "dark"); //adding custom attribute to body
+      }
+  </script>
+
+  <!-- ================= NAVIGATION ================= -->
+  <div id="header-placeholder"></div>
+
+  <!-- ================= HERO ================= -->
+    <section class="projects">
+        <div class="projects-copy">
+            <h1 class="projects-heading">Blog
+            </h1>
+
+            <p class="projects-bio">
+            Noting down my Expereince as i go on in this Journey
+            </p>
+        </div>  
+    </section>
+
+  <!-- ================= Blog Posts ================= -->
+    <section class="blog-section">
+        <h2 class="blog-heading">All Posts</h2>
+
+        <div id="blog-list" class="blog-grid">
+        <!-- Blog cards get inserted here by js/blog.js -->
+        </div>
+    </section>
+
+
+    <!-- ================= Footer ================= -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/theme.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/blog.js"></script>
+
+</body>
+</html>  

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Bhaveydeep Sethi</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<script>
+var savedTheme = localStorage.getItem("theme");
+if(savedTheme === "dark"){
+    document.body.setAttribute("data-theme","dark");
+}
+</script>
+
+<!-- ================= Header ================= -->
+<div id="header-placeholder"></div>
+
+<!-- ================= Resume ================= -->
+<section class="resume-section">
+    <h1 class="resume-heading">Resume</h1>
+    <p class="resume-text">
+        View my resume below or download a copy.
+    </p>
+
+    <!--Creates a view for resume -->
+    <iframe
+        class="resume-viewer" src="Resume.pdf" title="Resume">
+    </iframe>
+
+    <!--Download Button-->
+    <a href="Resume.pdf" download class="all-btn-projects">
+        Download Resume     
+    </a>
+</section>
+
+<!-- ================= Footer ================= -->
+<div id="footer-placeholder"></div>
+
+<script src="js/theme.js"></script>
+<script src="js/components.js"></script>
+
+</body>
+</html>

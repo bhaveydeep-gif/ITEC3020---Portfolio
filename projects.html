@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhaveydeep Sethi — Data Analyst Portfolio</title>
+
+  <!-- External stylesheet (site-wide) -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Fonts: display serif + body sans + mono for data labels -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Internal CSS: page-specific override, only used on the home page
+  <style>
+    /* This page's badge text is slightly wider-tracked than the default,
+       just for the home hero — an example of an internal, page-level style. */
+    .hero-badge {
+      letter-spacing: 0.12em;
+    }
+  </style> -->
+</head>
+<body>
+
+  <script>
+    //Applying the dark theme before the page loads 
+    var savedTheme = localStorage.getItem("theme"); //creating new variable that holds either dark or light
+      if (savedTheme === "dark"){
+        document.body.setAttribute("data-theme", "dark"); //adding custom attribute to body
+      }
+  </script>
+
+  <!-- ================= NAVIGATION ================= -->
+<div id="header-placeholder"></div>
+
+  <!-- ================= HERO ================= -->
+  <section class="projects">
+    <div class="projects-copy">
+        <h1 class="projects-heading">
+            My Projects
+        </h1>
+        <p class="projects-bio">
+            Things I've built — for classes, internships, and just for fun.
+        </p>
+    </div>  
+  </section>
+
+   <!-- ================= Projects ================= -->
+
+  <!--Outer Section-->
+  <section class="featured-projects">
+
+    <!--Category filter buttons-->
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="web">Web Development</button>
+    <button class="filter-btn" data-filter="uiux">UI/UX Design</button>
+    <button class="filter-btn" data-filter="java">Java Applications</button>  
+
+
+    <!--Card Structure-->
+    <div class="projects-grid">
+
+      <div class="project-card" data-category="uiux">
+        <!--Top image of the project-->
+        <img src="images/smarthome.png" alt="project screenshot" class="project-img"/>
+
+        <div class="project-body">  
+          <!-- A row with category and year-->
+          <div class="project-meta">
+            <span class="project-category">UI/UX Design</span>
+            <span class="project-year">2026</span>
+          </div>
+
+          <!--Section conataining the project title and its description-->
+          <h3 class="project-title">Smart-home App</h3>
+          <p class="project-desc">A high-fidelity home security application prototype designed to monitor cameras, locks, and sensors with a focus on usability and user experience.</p>
+
+        </div>
+      </div>
+      <!---->
+      <div class="project-card" data-category="java">
+        <!--Top image of the project-->
+        <img src="images/inventory.png" alt="project screenshot" class="project-img"/>
+
+        <div class="project-body">  
+          <!-- A row with category and year-->
+          <div class="project-meta">
+            <span class="project-category">Grapical User Interface</span>
+            <span class="project-year">2025</span>
+          </div>
+
+          <!--Section conataining the project title and its description-->
+          <h3 class="project-title">Inventory Manager</h3>
+          <p class="project-desc">A Java-based inventory management application that allows users to track products, manage stock levels, and interact with data through a graphical interface.
+          </p>
+
+        </div>
+      </div>
+  
+      <!---->
+      <div class="project-card" data-category="web">
+        <!--Top image of the project-->
+        <img src="images/clothes.png" alt="project screenshot" class="project-img"/>
+
+        <div class="project-body">  
+          <!-- A row with category and year-->
+          <div class="project-meta">
+            <span class="project-category">Website Design</span>
+            <span class="project-year">2025</span>
+          </div>
+
+          <!--Section conataining the project title and its description-->
+          <h3 class="project-title">Clothing Website</h3>
+          <p class="project-desc">A responsive clothing e-commerce website featuring modern layouts, product displays, and user-friendly navigation built with web technologies.
+          </p>
+
+        </div>
+      </div>
+      <!---->
+      <div class="project-card" data-category="web">
+        <!--Top image of the project-->
+        <img src="images/influencerweb.png" alt="project screenshot" class="project-img"/>
+
+        <div class="project-body">  
+          <!-- A row with category and year-->
+          <div class="project-meta">
+            <span class="project-category">Website Design</span>
+            <span class="project-year">2025</span>
+          </div>
+
+          <!--Section conataining the project title and its description-->
+          <h3 class="project-title">Influencer/fans Website</h3>
+          <p class="project-desc">A web platform designed to connect influencers with their audience through content sharing, user interaction, and engaging interface design.</p>
+
+        </div>
+      </div>
+      <!---->
+      <div class="project-card" data-category="java">
+        <!--Top image of the project-->
+       <img src="images/To-do.png" alt="project screenshot" class="project-img"/>
+
+        <div class="project-body">  
+          <!-- A row with category and year-->
+          <div class="project-meta">
+            <span class="project-category">Graphical User Interface</span>
+            <span class="project-year">2024</span>
+          </div>
+
+          <!--Section conataining the project title and its description-->
+          <h3 class="project-title">To-do List</h3>
+          <p class="project-desc">A Java desktop application that helps users organize tasks, manage deadlines, and improve productivity through a simple graphical interface.
+          </p>
+
+        </div>
+      </div>
+      <!---->
+      
+    </div>
+
+    <!--Shown When no cards match the filter-->
+    <p id="no-results" class="no-results" hidden>No projects found in this category</p>
+  </section>
+
+  <!-- ================= Footer ================= -->
+  <div id="footer-placeholder"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/theme.js"></script>
+
+</body>
+</html>  
+

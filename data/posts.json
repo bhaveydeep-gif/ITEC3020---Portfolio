@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "image": "https://placehold.co/600x400/1a1a1a/f6f3ea?text=Post+Image",
+    "title": "Making my Portfolio responsive and Adding Dark-Theme toggle",
+    "date": "2026-08-01",
+    "summary": "Making the website change to light or dark theme and able to run in different screen sizes",
+    "category": "learning",
+    "readTime": "6 min read",
+    "content": "<h3>Feature Overview</h3><p> The goal was to make my portfolio reponsive to different screen sizes of mobile, tablet, laptops etc. While also allowing the users change the style from light to dark mode on a click of the button.</p><h3>Approach</h3><p>I  I used css media queries to change the design of the layout depending upon the size. For screensizes smaller than 800px width, the navigation bar would shrink into hamburger menu using the Javascript which houses the navigation bar </p><p>I also developed function to toggle dark mode using CSS and js local variable. So that when the screen is changed to dark on one page, it stores the variables and then retains the same theme in different page <h3>Difficulties experienced<h3> <p> One of the difficulties i faced was making sure every content on page was visible when chaging the theme. I had to make some color adjustments since they were initially done for lighter background</p> <h3>Learnings</h3><p>I found that it was much easier working with css variables, as i just had to mimic the colours in darker theme and paste them in stylesheet</p>"
+  },
+    {
+    "id": 2,
+    "image": "https://placehold.co/600x400/1a1a1a/f6f3ea?text=Post+Image",
+    "title": "Creating Dynamic Blog System",
+    "date": "2026-08-01",
+    "summary": "Creating Blog Post/Cards automatically using JS and JSON",
+    "category": "Tutorial",
+    "readTime": "5 min read",
+    "content": "<h3>FeatureOverview</<h3><p>Stroing information in JSON and then using JS to place in placholder in HTML</p><h3>Approach</h3><p>I stored all the blog information in JSON file. Each post in json file contained attribute like image, title, date, summary, category, content and readingtime</p><p>JS uses the json file to create the blog and place that information in HTML/CSS placeholders. JS uses DOM Manipulation which let website to be updated whenevr the bog is updated. The blog uses index so whenevr the index is 0 it shows as the new post</p><h3>Challenges</h3><p>I found it difficult on understanding how json and js work together and how/where to input the json data into js script.</p> <p>I also tried to make subpages to blog so when user clicks on blog tile, instead of showing the information there and then, it opens another page. This was little cumbersone to do since i also had to learn how to acess objects properties</p><h3>Learning</h3><p>I understood how insetad of hard coding, websites dynamically stores and shows the data. How this data can be updated only in json without touching the rest of code, and nothing would break</p>"
+  },
+  {
+    "id": 3,
+    "image": "https://placehold.co/600x400/1a1a1a/f6f3ea?text=Post+Image",
+    "title": "Implementing Contact Form Validation",
+    "date": "2026-08-02",
+    "summary": "What I've learned so far about implementing validation to improve user experience and feedback",
+    "category": "learning",
+    "readTime": "7 min read",
+    "content": "<h3>FeatureOverview</<h3><p>Using validation in the contact form which the script checks all the strings from the user's input to verify the information</p><h3>Approach</h3><p>I used JS event listeners to detetct the strings which the user typesin. The script checks the field, email and messages. All these forms have their own versions of validation used.</p><p>If there are any incompetencies detected then the form fails to submit and doesnt goto next stage till user corrects it</p><h3>Challenges</h3><p>I found it difficult to issue rules on strings like email which had to include a strict line of strings that are allowed and not allowed.</p> <h3>Learning</h3><p>I learnt how can custom create our own rules and validation as we want instead of carrying on browser's built features</p>"
+  },
+  {
+    "id": 4,
+    
+    "title": "Adding filters in projects section",
+    "date": "2026-08-02",
+    "summary": "Adding the filers in projects so they can be instantly showen without loading a page ",
+    "category": "learning",
+    "readTime": "7 min read",
+    "content": "<h3>FeatureOverview</<h3><p>I added a live filter which instead of reloading the page everytime when user clicks the category, the same page updates instantly.</p><h3>Approach</h3><p>I created a set of category buttons above the projects post-tiles and assigned each tiles a category attribute to distinguish from each other</p><p>Wehn the user clicks on the filter button, the js script starts looping through all the post to find that category attribute. Matching posts get visible while rest gets hidden</p><h3>Challenges</h3>Making the filer button properly work and had difficulties in showing the posts when the filer was clicked. another challenge was making the button highlighted when it was clicked</p><h3>Learnings</h3>Doing this, help me in understanding of JS eventlistners loops, conditional statemnets and DOM manupilation. I also learned how the filtering works on a website and making the site interactive without adding multiple pages and refreshing</p>."
+  }  
+]    

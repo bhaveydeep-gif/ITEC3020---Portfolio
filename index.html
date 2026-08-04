@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhaveydeep Sethi — Data Analyst Portfolio</title>
+
+  <!-- External stylesheet (site-wide) -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Fonts: display serif + body sans + mono for data labels -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Internal CSS: page-specific override, only used on the home page -->
+  <style>
+    /* This page's badge text is slightly wider-tracked than the default,
+       just for the home hero — an example of an internal, page-level style. */
+    .hero-badge {
+      letter-spacing: 0.12em;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    //Applying the dark theme before the page loads 
+    var savedTheme = localStorage.getItem("theme"); //creating new variable that holds either dark or light
+      if (savedTheme === "dark"){
+        document.body.setAttribute("data-theme", "dark"); //adding custom attribute to body
+      }
+  </script>
+
+  <!-- ================= NAVIGATION ================= -->
+  <div id="header-placeholder"></div>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero-copy">
+      <!-- <span class="hero-badge">Open to opportunities</span> -->
+
+      <h1 class="hero-heading">
+        Aspiring.<br/>
+        <i>to be a.</i><br/>
+        Analyst.
+      </h1>
+
+      <!-- Inline style: one-off nudge on this single paragraph's max-width -->
+      <p class="hero-bio" style="max-width: 42ch;">
+        I'm Bhaveydeep - an aspiring data analytics student at York University. Python, MATLAB,
+         with interest in UI/UX and programming using JAVA, JAVASCRIPT"
+      </p>
+
+      <div class="hero-actions">
+        <a href="projects.html" class="btn btn-primary">View Projects</a>
+        <a href="resume.html" class="btn btn-secondary">Resume</a>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <img
+        src="images/IMG_4088.jpeg"
+        alt="Portrait of Bhavey"
+      />
+      <span class="hero-photo-caption">Toronto, ON</span>
+    </div>
+  </section>
+
+  <!-- ================= Projects ================= -->
+
+  <!--Outer Section-->
+  <section class="featured-projects" style="border: none;">
+    <!--Header row(title, button)-->
+    <div class="section-header">
+      <h2>Featured Projects</h2>
+      <a href="projects.html" class="all-btn-projects">All Projects</a>
+    </div>
+
+    <!--Card Structure-->
+    <div class="projects-grid">
+
+      <div class="project-card" data-category="java">
+        <!--Top image of the project-->
+        <img src="images/inventory.png" alt="project screenshot" class="project-img"/>
+
+        <div class="project-body">  
+          <!-- A row with category and year-->
+          <div class="project-meta">
+            <span class="project-category">Grapical User Interface</span>
+            <span class="project-year">2025</span>
+          </div>
+
+          <!--Section conataining the project title and its description-->
+          <h3 class="project-title">Inventory Manager</h3>
+          <p class="project-desc">A Java-based inventory management application that allows users to track products, manage stock levels, and interact with data through a graphical interface.
+          </p>
+
+        </div>
+      </div>
+      <!---->
+      <div class="project-card">
+        <!--Top image of the project-->
+        <img src="images/To-do.png" alt="project screenshot" class="project-img"/>
+
+        <div class="project-body">  
+          <!-- A row with category and year-->
+          <div class="project-meta">
+            <span class="project-category">Grapical User Interface</span>
+            <span class="project-year">2024</span>
+          </div>
+
+          <!--Section conataining the project title and its description-->
+          <h3 class="project-title">To-do List</h3>
+          <p class="project-desc">A real-time data visualization platform for analytics</p>
+
+        </div>
+      </div>
+      <!---->
+      <div class="project-card">
+        <!--Top image of the project-->
+        <img src="images/clothes.png" alt="project screenshot" class="project-img"/>
+
+        <div class="project-body">  
+          <!-- A row with category and year-->
+          <div class="project-meta">
+            <span class="project-category">Product Design</span>
+            <span class="project-year">2025</span>
+          </div>
+
+          <!--Section conataining the project title and its description-->
+          <h3 class="project-title">Clothing Website</h3>
+          <p class="project-desc">A real-time data visualization platform for analytics</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- ================= Footer ================= -->
+  <div id="footer-placeholder"></div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/components.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhaveydeep Sethi — Data Analyst Portfolio</title>
+
+  <!-- External stylesheet (site-wide) -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Fonts: display serif + body sans + mono for data labels -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Internal CSS: page-specific override, only used on the home page -->
+  <style>
+    /* This page's badge text is slightly wider-tracked than the default,
+       just for the home hero — an example of an internal, page-level style. */
+    .hero-badge {
+      letter-spacing: 0.12em;
+    }
+  </style>
+</head>
+
+<body>
+
+    <script>
+    //Applying the dark theme before the page loads 
+    var savedTheme = localStorage.getItem("theme"); //creating new variable that holds either dark or light
+      if (savedTheme === "dark"){
+        document.body.setAttribute("data-theme", "dark"); //adding custom attribute to body
+      }
+  </script>
+
+  <!-- ================= NAVIGATION ================= -->
+  <div id="header-placeholder"></div>
+
+  <!-- ================= HERO ================= -->
+  <section class="projects">
+    <div class="projects-copy">
+        <h1 class="projects-heading">
+            Contact
+        </h1>
+        <p class="projects-bio">
+            Get in touch — I'm friendly :)
+        </p>
+    </div>  
+  </section>
+
+  <!--================= FORM =================-->
+  <section class="contact-section">
+    <form id="contact-form" class="contact-form" novalidate> <!--turns off the browser's automatic checking-->
+        <div class="form-row">
+
+            <div class="form-name">
+                <label for="name">Your name *</label>
+                <input type="text" id="name" name="name" placeholder="Jane Smith"/>
+                <div class="error-message" id="name-error"></div>
+            </div>
+
+            <div class="form-email">
+                <label for="email">Your Email *</label>
+                <input type="email" id="email" name="email" placeholder="jane@example.com"/>
+                <div class="error-message" id="email-error"></div>
+            </div>
+
+        </div>
+         <div class="form-message">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="6" placeholder="What's on your mind"></textarea>
+                <div class="error-message" id="message-error"></div>
+            </div>
+            <button type="submit" class="contact-btn">Send message</button>
+
+           
+    </form>
+     <!--Shown instead of form once the validation is done-->
+            
+        <div id="success-message" class="success-message" style="display: none;">
+                <p>Thanks for reaching out!</p>
+            </div>
+  </section>
+
+
+
+
+
+      <!-- ================= Footer ================= -->
+  <div id="footer-placeholder"></div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/validate.js"></script>
+
+</body>
+</html>  
