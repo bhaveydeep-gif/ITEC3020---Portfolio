@@ -40,6 +40,15 @@ function setupNavToggle() {
  });
 }
 
+//Automatically adding active class
+const currentpage = window.location.pathname.split("/").pop();
+
+document.querySelectorAll(".nav-links a").forEach(function(link) {
+ if (link.getAttribute("href") === currentpage) {
+  link.classList.add("active");  //all the nav links becomes active when we vist that page
+ }
+}); 
+
 document.addEventListener("DOMContentLoaded", function () {
  loadComponent("#header-placeholder", "components/header.html", function() {
     setupNavToggle()        //houses hamburger function
